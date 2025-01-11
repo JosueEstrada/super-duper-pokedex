@@ -38,22 +38,14 @@ function App() {
     setSearchQuery(randomId);
   }, []);
 
-  if (loading) {
-    return (
-      <div
-        className={`font-montserrat min-h-screen ${bgClass} bg-gradient-to-b from-white/60 to-black/60 py-8 bg-blend-soft-light transition-all duration-1000`}
-      >
-        {loading && <Loading />}
-      </div>
-    );
-  }
+  if (loading) return <Loading />;
   if (error) return <div>Error: {error.message}</div>;
   if (!pokemon) return null;
 
   return (
     <>
       <div
-        className={`font-montserrat min-h-screen ${bgClass} bg-gradient-to-b from-white/60 to-black/60 bg-blend-soft-light transition-all duration-500`}
+        className={`min-h-screen ${bgClass} bg-gradient-to-b from-white/60 to-black/60 bg-blend-soft-light transition-all duration-500`}
       >
         <span className="pointer-events-none fixed inset-0 flex select-none items-center justify-center text-[30vw] font-black text-white/20">
           #{pokemon.id.toString().padStart(3, "0")}

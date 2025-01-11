@@ -25,7 +25,7 @@ export default {
       },
     },
     fontFamily: {
-      montserrat: ["Montserrat", "sans-serif"],
+      sans: ["Geist"],
     },
   },
   plugins: [],
