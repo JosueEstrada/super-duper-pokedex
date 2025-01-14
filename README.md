@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+## Iconos SVG
+Los iconos svg pertenecen a este repositorio https://github.com/partywhale/pokemon-type-icons
